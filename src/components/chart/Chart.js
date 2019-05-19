@@ -11,10 +11,10 @@ const Chart = props => {
       {
         label: "Questionnaire",
         data: [props.correct, props.wrong, 0],
-        backgroundColor: ["rgba(255, 99, 132, 0.6)", "rgba(54, 162, 235, 0.6)"]
+        backgroundColor: ["rgba(54, 162, 235, 0.6)", "rgba(255, 99, 132, 0.6)"]
       }
     ],
-    borderColor: ["rgba(255,99,132,1)", "rgba(54, 162, 235, 1)"]
+    borderColor: ["rgba(54, 162, 235, 1)", "rgba(255,99,132,1)"]
   };
 
   if (props.correct === 0 && props.wrong === 0) {
