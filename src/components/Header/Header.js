@@ -4,7 +4,7 @@ import "./style.css";
 const Header = () => {
   return (
     <div className="Header-Container">
-      <div className="Header-Heading">Mathematics Trivia</div>
+      <div className="Header-Heading">123 Mathematics Trivia</div>
       <div className="Header-Color-Description">
         <span className="Header-Color">
           <span className="Header-Color-item Header-y" /> Attempted Answer
