@@ -3,6 +3,7 @@ import { Bar } from "react-chartjs-2";
 
 import "./style.css";
 
+//Functional component
 const Chart = props => {
   let chartData = {
     labels: ["Correct", "Wrong"],
@@ -28,8 +29,6 @@ const Chart = props => {
       <div className="Chart-Container">
         <div className="Chart-Bar-Container" />
         <Bar
-          // width={400}
-          // height={10}
           data={chartData}
           options={{
             maintainAspectRatio: false,

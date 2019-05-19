@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-// import { Bar, Line, Pie, Polar } from "react-chartjs-2";
 import Chart from "../chart/Chart";
 import "./style.css";
 
@@ -49,6 +48,7 @@ class Questionnaire extends Component {
     }
   ];
 
+  // Loop questions and display
   LoopQuestions = data => {
     const ListItems = data.map((item, index) => (
       <div className="QuestionBlock" key={index}>
@@ -78,6 +78,7 @@ class Questionnaire extends Component {
     return <div>{ListItems}</div>;
   };
 
+  // Check whether options are filled or not
   shouldSubmit = () => {
     this.data.forEach((item, index) => {
       if (this[`textInput${index}`].value === "") {
@@ -88,6 +89,7 @@ class Questionnaire extends Component {
     });
   };
 
+  // Check single questions filled or not, after attempting
   validateAfterChange = index => {
     if (this[`textInput${index}`].value === "") {
       this[`textInput${index}`].style.border = "solid 2px red ";
@@ -96,6 +98,7 @@ class Questionnaire extends Component {
     }
   };
 
+  // Final validation
   validateSubmit = () => {
     let check = true;
     this.data.forEach((item, index) => {
@@ -106,6 +109,7 @@ class Questionnaire extends Component {
     return check;
   };
 
+  // This executes when you click "clear button"
   handleClearButton = () => {
     this.answerArr = [];
     this.setState({
@@ -118,6 +122,8 @@ class Questionnaire extends Component {
       this[`textInput${index}`].style.border = "solid 2px lightblue";
     });
   };
+
+  // This executes when you click "Submit" button
   handleSubmitButton = () => {
     let correctCount = 0;
     let totalQuestionsCount = 0;
@@ -144,6 +150,7 @@ class Questionnaire extends Component {
     });
   };
 
+  // When you change option from any questions - handle the change
   handleChange = (event, id) => {
     this.validateAfterChange(id);
     if (this.find(id) === -1) {
@@ -165,7 +172,7 @@ class Questionnaire extends Component {
     });
   };
 
-  //FIND
+  //FIND the ID, return the index
   find(id) {
     let index = -1;
 
@@ -178,6 +185,7 @@ class Questionnaire extends Component {
     return index;
   }
 
+  // Filters the array, returns new array
   filterItem(id) {
     let filteredlist = this.answerArr.filter(item => item.questionID !== id);
     return filteredlist;
