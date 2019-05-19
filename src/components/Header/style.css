@@ -41,3 +41,10 @@
   align-items: center;
   margin: 10px;
 }
+
+.Connect-Me {
+  position: fixed;
+  top: 0;
+  right: 0;
+  margin: 10px;
+}

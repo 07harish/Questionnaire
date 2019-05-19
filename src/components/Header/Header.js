@@ -5,6 +5,9 @@ const Header = () => {
   return (
     <div className="Header-Container">
       <div className="Header-Heading">Mathematics Trivia</div>
+      <div className="Connect-Me">
+        <a href="https://07harish.netlify.com/">About Me</a>
+      </div>
       <div className="Header-Color-Description">
         <span className="Header-Color">
           <span className="Header-Color-item Header-y" /> Attempted Answer
