@@ -1,0 +1,43 @@
+.Header-Container {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  background-color: black;
+  color: white;
+  padding: 5px;
+  font-family: monospace;
+  font-size: 15px;
+}
+.Header-Heading {
+  font-size: 20px;
+  font-weight: bolder;
+  margin: 10px;
+}
+.Header-y {
+  background-color: yellow;
+}
+
+.Header-b {
+  background-color: lightblue;
+}
+
+.Header-r {
+  background-color: red;
+}
+
+.Header-Color-item {
+  display: inline-block;
+  height: 10px;
+  width: 10px;
+}
+
+.Header-Color {
+  margin-right: 20px;
+}
+.Header-Color-Description {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  margin: 10px;
+}

@@ -1,0 +1,11 @@
+.Chart-Container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  /* width: 50%; */
+}
+
+.Chart-Bar-Container {
+  /* height: 300px; */
+}

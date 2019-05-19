@@ -1,0 +1,58 @@
+.Questionnaire-Maincontainer {
+  background-color: white;
+  padding: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  font-family: monospace;
+  font-size: 15px;
+}
+
+.QuestionBlock {
+  background-color: whitesmoke;
+  padding: 10px;
+  margin: 4px;
+}
+.Questionnaire-container-1 {
+  width: 65%;
+}
+
+.Questionnaire-container-2 {
+  background-color: whitesmoke;
+  padding: 10px;
+  margin: 4px;
+  width: 30%;
+}
+
+.button {
+  width: 80px;
+  height: 35px;
+  border-radius: 15px;
+  background-color: black;
+  color: white;
+  border: none;
+  box-shadow: 0px 0px 2px 0px rgb(87, 87, 87);
+  margin-left: 10px;
+  margin-right: 10px;
+  outline: none;
+}
+
+.Question-Select {
+  background-color: white;
+  color: black;
+  border: 2px solid lightblue;
+  outline: none;
+  font-size: 15px;
+  padding: 5px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+@media screen and (max-width: 800px) {
+  .Questionnaire-container-1 {
+    width: 100%;
+  }
+  .Questionnaire-container-2 {
+    width: 100%;
+  }
+}
