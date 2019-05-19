@@ -152,7 +152,6 @@ class Questionnaire extends Component {
         answer: event.target.value
       });
     } else {
-      console.log("FILTERED", this.filterItem(id));
       this.answerArr = this.filterItem(id);
 
       this.answerArr.push({
